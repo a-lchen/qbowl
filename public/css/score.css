@@ -1,0 +1,32 @@
+.score td {
+    background: white;
+    padding: 5px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.score{
+	z-index:25;
+	margin-top: 20px;
+	background:white;
+	align-self:center;
+	min-width: 100%;
+}
+
+
+/* different cells */
+
+.nameCell{
+	width: 140px;
+}
+
+.scoreCell {
+	width: 40px;
+}
+
+.negCell {
+	width: 40px;
+}
+
+/* styles for individual things in cells */

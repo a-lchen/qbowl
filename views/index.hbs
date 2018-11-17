@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <title></title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/answer.css">
+<link rel="stylesheet" type="text/css" href="css/question.css">
+<link rel="stylesheet" type="text/css" href="css/score.css">
+<link rel="stylesheet" type="text/css" href="css/timer.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- Modal -->
+    <div class="modal fade" id="regmodal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="regModalLabel">Register!</h5>
+          </div>
+          <div class="modal-body">
+            <div class="login-stuff">
+                <form class="js-join"><input id="name-input" type="text" name="name" placeholder="Your name" required="required">
+                <!-- <input type="number" name="team" placeholder="Your team number" required="required"> -->
+                <button type="submit" class="btn-primary">Join!</button></form>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="main-container">
+          <div class="question-container">
+            <div class="question">
+              <div class="content"></div>
+            </div>
+          </div>
+          <div class="answer-container">
+            <div id="answer-text" style="text-align: center;"></div>
+            <div class="answer-attempt hidden">
+              <input id="answer-textbox" class="answer-textbox" type="text" name="answer" placeholder="your answer" onSubmit = "return false">
+              <button id="answer-submit" class="answer-button">submit!</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="side-container">
+          <div class="timerbar">
+            <div class="timertext">
+              <span id="seconds">00</span>:<span id="tens">00</span>
+            </div>
+            <div class="timeprogress">
+              
+            </div>
+            </div>
+          <table class="score" id="score-table">
+            
+          </table>
+
+        </div>
+
+
+    </div>
+
+<!--     <div class="center">    
+    <div class="js-joined hidden">
+        <div class="score"></div>
+            <div class="text-stuff">
+
+            <div class="answer-form-holder hidden">
+            <input id="answer-textbox" class="answer-textbox" type="text" name="answer" placeholder="your answer" onSubmit = "return false">
+                <button id="answer-submit" class="answer-button">submit!</button></div>
+            <p class="js-joined-info"></p>
+            <p class="buzz-info"></p>
+        </div>
+    </div>
+</div>
+ -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/answer.js"></script>
+    <script src="js/listener.js"></script>
+</body>
+
+</html>
